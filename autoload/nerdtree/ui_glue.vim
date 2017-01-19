@@ -555,6 +555,9 @@ function! nerdtree#ui_glue#setupCommands()
     command! -n=0 -bar NERDTreeFind call s:findAndRevealPath()
     command! -n=0 -bar NERDTreeFocus call NERDTreeFocus()
     command! -n=0 -bar NERDTreeCWD call NERDTreeCWD()
+    command! -n=0 -bar NERDTreeSortByAtimeToggle
+                \ let g:NERDTreeSortByAtime = !g:NERDTreeSortByAtime |
+                \ NERDTree
 endfunction
 
 " Function: s:SID()   {{{1

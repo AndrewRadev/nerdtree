@@ -86,6 +86,7 @@ else
     endif
 endif
 
+call s:initVariable("g:NERDTreeSortByAtime", 0)
 call s:initVariable("g:NERDTreeGlyphReadOnly", "RO")
 
 if !exists('g:NERDTreeStatusline')
