@@ -1,3 +1,21 @@
+This is a fork of [The NERD tree](https://github.com/scrooloose/nerdtree) that adds a single feature: sorting by access time.
+
+If you'd like the tree to sort files and directories by access time, set this in your .vimrc:
+
+``` vim
+let g:NERDTreeSortByAtime = 1
+```
+
+If you'd prefer to toggle this variable with a command (recommended), just call:
+
+``` vim
+:NERDTreeSortByAtimeToggle
+```
+
+This will have to reopen the entire tree, but there's no way around it. For a large directory, this might take some time, because, underneath, the code is shelling out with a `stat` for every file. You might also want to map the command to a mapping to make it more convenient to use.
+
+<hr />
+
 The NERD Tree
 =============
 
